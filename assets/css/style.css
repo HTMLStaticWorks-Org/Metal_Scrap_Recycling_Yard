@@ -1197,8 +1197,24 @@ h6, .h6 { font-size: 0.92rem; }
 .hero-h2-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 16, 24, 0.14) 0%, rgba(7, 16, 24, 0.45) 42%, rgba(7, 16, 24, 0.92) 72%, #071018 100%);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 62%, rgba(7, 16, 24, 0.78) 0%, rgba(7, 16, 24, 0.35) 70%, transparent 100%),
+    linear-gradient(180deg, rgba(7, 16, 24, 0.55) 0%, rgba(7, 16, 24, 0.62) 45%, rgba(7, 16, 24, 0.94) 76%, #071018 100%);
   z-index: 1;
+}
+
+.hero-h2-cinematic h1,
+.hero-h2-cinematic .lead {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+}
+
+.hero-h2-cinematic .lead {
+  color: rgba(241, 245, 249, 0.92) !important;
+  opacity: 1 !important;
+}
+
+.hero-h2-cinematic .text-steel {
+  color: #CBD5E1 !important;
 }
 
 .h2-pill-eyebrow {
@@ -1207,10 +1223,11 @@ h6, .h6 { font-size: 0.92rem; }
   gap: 0.5rem;
   padding: 0.4rem 1.1rem;
   border-radius: 50px;
-  background: rgba(16, 185, 129, 0.14);
-  border: 1px solid rgba(16, 185, 129, 0.55);
+  background: rgba(7, 16, 24, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(16, 185, 129, 0.65);
   box-shadow: 0 0 22px rgba(16, 185, 129, 0.28);
-  color: #E2F8F0;
+  color: #ECFDF5;
   font-family: var(--font-heading);
   font-size: 0.72rem;
   font-weight: 700;
